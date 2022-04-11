@@ -1,0 +1,41 @@
+<!-- header section starts  -->
+
+<header>
+    <a href="#" class="logo"><i class="fas fa-utensils"></i>E-kaly</a>
+
+    <div (click)="toogle()" id="menu-bar" class="fas" [ngClass]="isActive ? 'fa-times' : 'fa-bars'"></div>
+
+    <nav class="navbar" [ngClass]="{'active' : isActive}">
+        <a href="#">Client</a>
+        <a href="#">Restaurant</a>
+        <a href="#">Livreur</a>
+        <a href="#">Admin</a>
+    </nav>
+</header>
+
+<!-- header section ends -->
+
+<!-- home section starts  -->
+
+<section class="home" id="home">
+    <div class="content">
+        <h3>Bienvenue sur E-kaly!</h3>
+        <p>Veuillez vous connecter.</p>
+        <!-- <a href="#" class="btn">order now</a> -->
+    </div>
+</section>
+
+<app-login></app-login>
+
+<section class="footer">
+    <div class="share">
+        <a href="#" class="btn">facebook</a>
+        <a href="#" class="btn">twitter</a>
+        <a href="#" class="btn">instagram</a>
+        <a href="#" class="btn">pinterest</a>
+    </div>
+    <h2 class="credit"> RAMAMBAZAFY <span> Andriambelo </span> | ITUniversity 2022 </h2>
+</section>
+<!-- <div class="loader-container">
+    <img src="./assets/loader.gif" alt="">
+</div> -->
